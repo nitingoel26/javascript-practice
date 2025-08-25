@@ -1,0 +1,13 @@
+.rating {
+  display: flex;
+  flex-direction: row;
+}
+
+.rating > * {
+  margin-right: 8px;
+  border: 1px solid black;
+}
+
+.rated {
+  background-color: yellow;
+}
