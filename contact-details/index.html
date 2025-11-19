@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Details</title>
+  </head>
+  <body>
+    <h1>Enter your details here</h1>
+    <form id="myForm">
+      <div>
+        <label for="fname">First Name</label>
+        <input id="fname" type="text" name="fname" value="" />
+      </div>
+      <br />
+      <div>
+        <label for="lname">Last Name</label>
+        <input id="lname" type="text" name="lname" value="" />
+      </div>
+      <br />
+      <div>
+        <label for="email">Email Id</label>
+        <input id="email" type="email" name="email" value="" />
+      </div>
+      <br />
+      <div>
+        <p>Enter your Tshirt Size</p>
+        <input id="small" type="radio" name="tshirt" value="small" />
+        <label for="small">Small</label>
+        <br />
+        <input id="medium" type="radio" name="tshirt" value="medium" />
+        <label for="medium">Medium</label>
+        <br />
+        <input id="large" type="radio" name="tshirt" value="large" />
+        <label for="large">Large</label>
+      </div>
+
+      <div>
+        <p>Select your hobbies:</p>
+        <input type="checkbox" id="reading" name="hobby" value="reading" />
+        <label for="reading">Reading</label><br />
+
+        <input type="checkbox" id="traveling" name="hobby" value="traveling" />
+        <label for="traveling">Traveling</label><br />
+
+        <input type="checkbox" id="gaming" name="hobby" value="gaming" />
+        <label for="gaming">Gaming</label><br />
+      </div>
+
+      <label for="feedback">Feedback:</label><br />
+      <textarea
+        id="feedback"
+        name="feedback"
+        rows="4"
+        placeholder="Enter feedback"
+      ></textarea
+      ><br /><br />
+
+      <input type="reset" />
+      <input type="submit" />
+    </form>
+  </body>
+  <script>
+    const form = document.getElementById("myForm");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault(); // prevent actual form submission
+
+      const formData = new FormData(form);
+
+      // Log each key-value pair
+      for (let [key, value] of formData.entries()) {
+        console.log(`${key}: ${value}`);
+      }
+    });
+  </script>
+</html>

@@ -1,0 +1,22 @@
+.box {
+  margin: 100px auto;
+  width: 200px;
+  height: 200px;
+  background-color: teal;
+  transition: ease-in 1s;
+
+  transition-duration: 0.3s;
+  transition-property: backgroud-color, border-radius;
+  transition-delay: 1s;
+  transition-timing-function: ease;
+}
+
+.box:hover {
+  background-color: purple;
+}
+
+/*
+transition-timing-function: ease,ease-in,ease-out,linear,ease-in-out
+cubic-bezieer
+
+*/

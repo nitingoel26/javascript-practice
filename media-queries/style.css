@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: red;
+}
+
+/* @media (width<=400px) {
+  body {
+    background-color: yellow;
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+    background-color: green;
+  }
+} */
+
+@media ((min-width: 400px) and (max-width:600px)) {
+  body {
+    background-color: yellow;
+  }
+}
+
+/* @media screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+} */
+
+/*min-width  is starting from and max-width is up to media queries are executed from top to bottom and lat 
+one that is applicable is applied */

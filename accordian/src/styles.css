@@ -1,0 +1,19 @@
+.header {
+  width: 100vh;
+  padding: 1rem;
+  background-color: aqua;
+}
+.header:not(:first-child) {
+  margin-top: 2rem;
+}
+.details {
+  background-color: red;
+  width: 100vh;
+  padding: 2rem;
+}
+.details:last-child {
+  margin-bottom: 0;
+}
+.open {
+  display: none;
+}
